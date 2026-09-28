@@ -1,0 +1,27 @@
+<svg viewBox="0 0 700 242" width="100%" role="img" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;" xmlns="http://www.w3.org/2000/svg">
+  <title>微分方程：丢解机制与解的分类对比</title>
+
+  <!-- 顶部：丢解机制 -->
+  <rect x="30" y="16" width="640" height="42" rx="8" fill="#F1F3F5" stroke="#CED4DA" stroke-width="1"/>
+  <text x="350" y="37" text-anchor="middle" dominant-baseline="central" font-size="13.5" font-weight="600" fill="#212529">
+    丢解机制：代数变形不可逆（如除以含未知函数因式 g(y)、开方、换元）
+  </text>
+
+  <!-- 左侧：线性方程卡片 -->
+  <rect x="30" y="70" width="305" height="155" rx="10" fill="#EBFBEE" stroke="#2B8A3E" stroke-width="1"/>
+  <text x="50" y="93" dominant-baseline="central" font-size="14.5" font-weight="700" fill="#2B8A3E">线性方程（y' + P(x)y = Q(x)）</text>
+  <line x1="50" y1="108" x2="315" y2="108" stroke="#2B8A3E" stroke-width="0.7" stroke-dasharray="2,2"/>
+  <text x="50" y="126" dominant-baseline="central" font-size="12" fill="#237032">• 积分因子法乘 e^∫P(x)dx 恒非零，步步等价</text>
+  <text x="50" y="147" dominant-baseline="central" font-size="12" fill="#237032">• 全程无除零风险，不丢解</text>
+  <text x="50" y="168" dominant-baseline="central" font-size="12" fill="#237032">• 满足唯一性定理，绝无奇解</text>
+  <text x="50" y="195" dominant-baseline="central" font-size="13" font-weight="700" fill="#1B5526">全部解 ≡ 通解（含全部特解）</text>
+
+  <!-- 右侧：非线性方程卡片 -->
+  <rect x="365" y="70" width="305" height="155" rx="10" fill="#FFF9DB" stroke="#E67700" stroke-width="1"/>
+  <text x="385" y="93" dominant-baseline="central" font-size="14.5" font-weight="700" fill="#D9480F">非线性方程（可分离变量/齐次等）</text>
+  <line x1="385" y1="108" x2="650" y2="108" stroke="#E67700" stroke-width="0.7" stroke-dasharray="2,2"/>
+  <text x="385" y="126" dominant-baseline="central" font-size="12" fill="#A61E4D">• 分离变量除以 g(y) 时默认 g(y) ≠ 0</text>
+  <text x="385" y="147" dominant-baseline="central" font-size="12" fill="#A61E4D">• 遗漏的 g(y)=0 需单独代入方程验解</text>
+  <text x="385" y="168" dominant-baseline="central" font-size="12" fill="#A61E4D">• 赋值补不回的解：普通特解 或 奇解</text>
+  <text x="385" y="195" dominant-baseline="central" font-size="13" font-weight="700" fill="#C92A2A">全部解 = 通解 ∪ 遗漏特解（可能含奇解）</text>
+</svg>
